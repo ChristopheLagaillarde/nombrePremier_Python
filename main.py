@@ -10,7 +10,7 @@ except ValueError:
 try:
     for i in range(2, a-1):
         temp = a % i
-        if(temp == 0):
+        if temp == 0:
             print("Ce nombre n'est pas premier")
             break
     else:
