@@ -1,19 +1,25 @@
-import sys
-sys.tracebacklimit = 0
+# Program : main
+# Description : execute the function is_prime_number
+# Date : 24/05/22
+# Author : Christophe LAGAILLARDE
+# Version : 1.0
 
-try:
-    a = int(input("saisir un nombre"))
-except ValueError:
-    print("Saisie incorrecte!")
+from is_prime_number import is_prime_number
 
 
-try:
-    for i in range(2, a-1):
-        temp = a % i
-        if temp == 0:
-            print("Ce nombre n'est pas premier")
-            break
-    else:
-        print("Ce nombre est premier !")
-except NameError:
-    print()
+def main():
+    try:
+        if is_prime_number(int(input("input a number, we will tell you if it is a prime number:"))):
+            print("it's a prime number")
+        else:
+            print("it's not a prime number")
+    except ValueError:
+        print("incorect input")
+    except TypeError:
+        print("incorect input")
+    except NameError:
+        print("incorect input")
+
+
+if __name__ == '__main__':
+    main()
