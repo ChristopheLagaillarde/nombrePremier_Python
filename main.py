@@ -7,7 +7,7 @@
 from is_prime_number import is_prime_number
 
 
-def main():
+def main() -> None:
     try:
         is_prime, divider = is_prime_number(int(input("input a number, we will tell you if it is a prime number:")))
         if is_prime:

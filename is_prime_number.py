@@ -4,7 +4,7 @@
 # Author : Christophe LAGAILLARDE
 # Version : 1.0
 
-def is_prime_number(number):
+def is_prime_number(number: int) -> tuple:
     try:
         i = 0
         for i in range(2, number - 1):

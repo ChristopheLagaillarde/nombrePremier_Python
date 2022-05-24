@@ -7,7 +7,7 @@
 from is_prime_number import is_prime_number
 
 
-def test_is_prime_number():
+def test_is_prime_number() -> None:
     assert is_prime_number(7), "The program does not work"
 
 
