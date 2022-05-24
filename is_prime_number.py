@@ -6,12 +6,13 @@
 
 def is_prime_number(number):
     try:
+        i = 0
         for i in range(2, number - 1):
             temp = number % i
             if temp == 0:
-                return False
+                return False, i
         else:
-            return True
+            return True, i
 
     except ValueError:
         print("incorect input")

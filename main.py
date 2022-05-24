@@ -9,16 +9,18 @@ from is_prime_number import is_prime_number
 
 def main():
     try:
-        if is_prime_number(int(input("input a number, we will tell you if it is a prime number:"))):
+        is_prime, divider = is_prime_number(int(input("input a number, we will tell you if it is a prime number:")))
+        if is_prime:
             print("it's a prime number")
         else:
-            print("it's not a prime number")
+            print(f"it's not a prime number, it can be divided by {divider}")
+
     except ValueError:
-        print("incorect input")
+        print("incorrect input")
     except TypeError:
-        print("incorect input")
+        print("incorrect input")
     except NameError:
-        print("incorect input")
+        print("incorrect input")
 
 
 if __name__ == '__main__':
