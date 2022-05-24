@@ -15,8 +15,8 @@ def is_prime_number(number):
             return True, i
 
     except ValueError:
-        print("incorect input")
+        print("incorrect input")
     except TypeError:
-        print("incorect input")
+        print("incorrect input")
     except NameError:
-        print("incorect input")
+        print("incorrect input")
